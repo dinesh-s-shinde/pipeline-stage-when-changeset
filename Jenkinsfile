@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             when { 
-                changeset glob: "*.js" 
+                changeset "*.js" 
             }
             steps {
                 echo "Hello World in change set"
